@@ -1,3 +1,8 @@
 # Eclipse CDT / Parasoft C++test metadata - not tracked
 .cpptest/
 .settings/
+
+# Build output and generated reports - not tracked
+Debug/
+UNIT_TESTING/
+MISRA_C_2025/
