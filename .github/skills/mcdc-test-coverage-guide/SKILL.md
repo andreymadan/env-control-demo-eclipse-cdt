@@ -3,7 +3,7 @@ name: mcdc-test-coverage-guide
 description: 'Explains how to design and justify MC/DC (Modified Condition/Decision Coverage) test cases for C functions tested with Parasoft C/C++Test: independent condition analysis, boundary value analysis, and compound AND/OR coverage matrices. Use when adding tests to reach MC/DC coverage level (DO-178C, ISO 26262, IEC 62304) on a C module, or when explaining why a specific test case is required for MC/DC.'
 ---
 
-# MC/DC Coverage Enhancement - TestSuite_actuator_manager_c.c
+# MC/DC Coverage Enhancement - Per-Function ActuatorManager Suites
 
 **Framework:** Parasoft C/C++Test Professional v2026.1
 **Coverage Level:** Modified Condition/Decision Coverage (MC/DC)
@@ -18,7 +18,7 @@ MC/DC (Modified Condition/Decision Coverage) is a rigorous code coverage metric 
 2. **Each condition** within a compound decision must independently affect the outcome
 3. **All decision outcomes** must be exercised
 
-This document describes 10 additional test cases (Tests 13-22) that enhance MC/DC coverage beyond a basic 12 test case suite, used here as a worked example for `ActuatorManager_*` functions (`StartFan`, `StopFan`, `StartHeater`, `StopHeater`, `StopAll`, `CanStartFan`).
+This document describes 10 additional test cases (Tests 13-22) that enhance MC/DC coverage beyond a basic 12 test case set, used here as a worked example for `ActuatorManager_*` functions (`StartFan`, `StopFan`, `StartHeater`, `StopHeater`, `StopAll`, `CanStartFan`). Put each function's tests in its own suite under `tests/src/actuator_manager_tests/`, following the [one-function-per-suite convention](../parasoft-unit-testing/Skill.md#one-function-per-testsuite-naming-convention).
 
 ---
 
